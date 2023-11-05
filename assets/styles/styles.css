@@ -12,3 +12,14 @@
 
     --font-principal: 'Poppins', sans-serif;
 }
+
+body{
+    background-color: var(--color-bg);
+    font-size: 16px;
+    font-family: var(--font-principal);
+    
+}
+
+.container{
+    padding: 2rem;
+}
