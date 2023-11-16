@@ -19,7 +19,9 @@ body{
     font-family: var(--font-principal);
     
 }
-
+.scroll{
+    overflow: hidden;
+}
 
 .container{
     padding: 0 1.5rem;
@@ -32,6 +34,7 @@ body{
 }
 /* MENU LATERAL MOBILE */
 .menu-navegação{
+    overflow: hidden;
     display: none;
     background-color: var(--color-segundaria);
     position:fixed;
