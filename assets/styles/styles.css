@@ -1,21 +1,24 @@
 @import url(./reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
 
 :root{
-    --color-primaria:#7B4AE2;
-    --color-segundaria: #201A3F;
-    --color-bg:#0C151D;
-    --color-terciaria: #171F26;
-    --color-cinza:#A3ABB2;
-    --color-branca:#FFFFFF;
+    --color-primaria:#8E05C2; /*7B4AE2*/
+    --color-segundaria: #700B97; /*201A3F*/
+    --color-terciaria: #3E065F; /*171F26*/
+    --color-bg:#000000; /*0C151D*/
+    --color-cinza:#A3ABB2; /*A3ABB2*/
+    --color-branca:#FFFFFF; /*FFFFFF*/
 
 
-    --font-principal: 'Poppins', sans-serif;
+    --font-principal: 'Raleway', sans-serif;
 }
 
 body{
+    margin: auto;
+    max-width: 1728px;
     background-color: var(--color-bg);
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--font-principal);
     
 }
@@ -32,11 +35,14 @@ body{
     display: flex;
     justify-content: flex-end;
 }
+.menu-navegação_desktop{
+    display: none;
+}
 /* MENU LATERAL MOBILE */
 .menu-navegação{
     overflow: hidden;
     display: none;
-    background-color: var(--color-segundaria);
+    background-color: var(--color-terciaria);
     position:fixed;
     top: 0;
     height: 100vh;
@@ -67,7 +73,7 @@ body{
 
 .perfil__menu img{
     width: 75px;
-    border: 4px solid var(--color-primaria);
+    border: 4px solid var(--color-segundaria);
     border-radius: 50%;
 
 }
@@ -82,7 +88,7 @@ body{
     padding-bottom: 1rem
 }
 .texto_perfil span{
-    color: var(--color-primaria);
+    color: var(--color-cinza);
     font-weight: 400;
 
     
@@ -108,12 +114,12 @@ body{
 }
 .link__menu li a{
     font-weight: 100;
-    background-color: var(--color-terciaria);
+    background-color: var(--color-primaria);
     border-radius: 10px;
     padding: 1rem;
     display: block;
     text-decoration: none;
-    color: var(--color-cinza);
+    color: var(--color-branca);
     text-transform: uppercase;
 }
 
@@ -129,7 +135,7 @@ body{
     font-size: 18px;
 }
 
-
+/*Pagina Inicio*/
 
 .inico{
     display: flex;
@@ -140,6 +146,7 @@ body{
 }
 
 .foto_perfil{
+    padding: 2px;
     width: 45%;
     border: 4px solid var(--color-primaria);
     border-radius: 50%;
@@ -153,13 +160,16 @@ body{
 .texto_inico h2{
     color: var(--color-branca);
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 700;
+}
+.texto_inico h2 span{
+    display: none;
 }
 
 .texto_inico h1{
     color: var(--color-cinza);
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
@@ -171,13 +181,21 @@ body{
 
 }
 
+.texto_inico .desktop{
+    display: none;
+}
+
 .social_links{
+    color: var(--color-cinza);
     display: flex;
     justify-content: center;
     gap: 32px;
     margin: 38px 0;
 }
+.social_links img{
+    width: 25px;
 
+}
 .container_curriculo{
     display: flex;
     gap: 26px;
@@ -274,11 +292,12 @@ body{
 }
 
 .card ul li{
-    color: var(--color-primaria);
+    color: var(--color-cinza);
     background-color: var(--color-segundaria);
     padding: 0.5em 1em;
     text-align: center;
     border-radius: 8px;
+    font-size: 0.8rem;
 
 }
 
@@ -306,6 +325,10 @@ body{
     flex-wrap: wrap;
     column-gap: 1.2rem;
     row-gap: 0.8rem;
+}
+
+.card-skills ul li img{
+    width: 25px;
 }
 
 
@@ -340,10 +363,130 @@ body{
     justify-content: space-between;
     color: var(--color-primaria);
     margin-bottom: 0;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .tempo p{
     color: var(--color-primaria);
     font-weight: 300;
+}
+
+
+.rodape{
+    color: var(--color-cinza);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 3.12rem 0;
+}
+
+@media (min-width: 1024px){
+    .cabecalho{
+        display: none;
+        
+    }
+    .menu-navegação_desktop{
+        display: block;
+        background-color: var(--color-terciaria);
+        margin: 2rem 4.75rem;
+        border-radius: 1.2rem;
+    }
+    .menu-navegação_desktop .link__menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0;
+    }
+    .menu-navegação_desktop .link__menu li a{
+        background:  transparent;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .menu-navegação_desktop .link__menu li a:hover{
+        color: var(--color-primaria);
+    }
+
+    .container{
+        margin: 0 2.5rem;
+    }
+    .inico{
+        margin: 5rem 0;
+        flex-direction: row;
+        text-align: justify;
+        justify-content: space-around;
+    }
+    .foto_perfil{
+       width: 30%
+    }
+
+    .texto_inico{
+        width: 50%;
+    }
+    .texto_inico .desktop{
+        display: block;
+
+    }
+    .texto_inico h2 span{
+        display: inline;
+    }
+    .texto_inico h2{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .texto_inico h1{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .texto_inico p{
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    .social_links{
+        justify-content: flex-start;
+    }
+    .social_links a img{
+        width: 25px;
+    }
+
+    .container_curriculo a{
+        width: 125px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .container-skills{
+        display: flex;
+        flex-direction: row;
+    }
+    .card-skills{
+        width: 50%;
+    }
+    .card-skills ul li img{
+        width: 65px;
+    }
+    .container_flex{
+        display: flex;
+        margin: auto;
+        flex-direction: row-reverse;
+        justify-content:space-evenly;
+
+    }
+
+    .container-profissional_academico{
+        display: block;
+        margin-inline:3rem;
+        width:50%;
+    }
+
+    .section-titulo h3{
+        background-color: var(--color-bg);
+        margin: 0 1rem;
+    }
 }
