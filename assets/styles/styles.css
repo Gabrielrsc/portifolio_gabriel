@@ -486,7 +486,12 @@ body{
     }
 
     .section-titulo h3{
-        background-color: var(--color-bg);
+        background-color: transparent;
         margin: 0 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .section-titulo .active{
+        background-color: transparent;
     }
 }
