@@ -10,6 +10,8 @@
     --color-cinza:#A3ABB2; /*A3ABB2*/
     --color-branca:#FFFFFF; /*FFFFFF*/
 
+    --color-calaro: #fff;
+
 
     --font-principal: 'Raleway', sans-serif;
 }
@@ -113,6 +115,7 @@ body{
     
 }
 .link__menu li a{
+    font-size: 0.8rem;
     font-weight: 100;
     background-color: var(--color-primaria);
     border-radius: 10px;

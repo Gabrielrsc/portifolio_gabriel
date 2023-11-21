@@ -8,6 +8,14 @@ const areasProfissional = document.querySelector('.profissional')
 const academico = document.querySelector('#academico')
 const areaAcademica = document.querySelector('.academico')
 
+const claro = document.querySelector('.temaClaro')
+
+
+claro.addEventListener('click', ()=>{
+    document.documentElement.styleProperty("--color-primaria", "--color-claro")
+    console.log('oiiiii')
+})
+
 abrir.addEventListener ('mouseover', function () {
     console.log('Abrindo Menu');
     Abrindo.classList.add('menuAberto');
