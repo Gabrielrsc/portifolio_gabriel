@@ -3,11 +3,11 @@
 
 
 :root{
-    --color-primaria:#164863; /*7B4AE2*/
-    --color-segundaria: #427D9D; /*201A3F*/
-    --color-terciaria: #427D9D; /*171F26*/
+    --color-primaria:#6F61C0; /*7B4AE2*/
+    --color-segundaria: #A084E8; /*201A3F*/
+    --color-terciaria: #222831; /*171F26*/
     --color-bg:#0F0F0F; /*0C151D*/
-    --color-cinza:#DDF2FD; /*A3ABB2*/
+    --color-cinza:#DDDDDD; /*A3ABB2*/
     --color-branca:#FFFFFF; /*FFFFFF*/
 
     --color-calaro: #fff;
@@ -41,9 +41,10 @@ body{
     display: none;
 }
 /* MENU LATERAL MOBILE */
+
 .menu-navegação{
-    overflow: hidden;
     display: none;
+    overflow: hidden;
     background-color: var(--color-terciaria);
     position:fixed;
     top: 0;
@@ -52,10 +53,12 @@ body{
     right: 0;
 }
 
-
 .menuAberto{
+    
     display: block;
 }
+
+
 
 
 .navegacao__container{
@@ -71,9 +74,6 @@ body{
 .perfil__menu{
     display: flex;
     gap: 1.5rem;
-}
-.foto_perfil{
-    /* background: #164863; */
 }
 
 .perfil__menu img{
@@ -326,22 +326,20 @@ body{
     margin-bottom: 1rem;
 }
 
-.card-skills ul{
+.card-skills ul {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 1.2rem;
-    row-gap: 0.8rem;
+    justify-content:start;
+    gap: 0.7rem;
 }
 
-.card-skills ul li{
+.card-skills ul li {
     color: var(--color-bg);
     font-weight: 800;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     padding: 0.3rem 0.5rem;
     border-radius: 5px;
     background-color: var(--color-branca);
+
 }
 
 .card-skills ul li span{
@@ -361,7 +359,7 @@ body{
     display: block;
 }
 .container-academico{
-    border: 1px solid var(--color-primaria);
+    border: 2px solid var(--color-primaria);
     border-radius: 16px;
     padding: 20px;
     margin-bottom: 1.5rem;
@@ -382,14 +380,14 @@ body{
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
-    color: var(--color-primaria);
+    color: var(--color-cinza);
     margin-bottom: 0;
     font-weight: 600;
     font-size: 12px;
 }
 
 .tempo p{
-    color: var(--color-primaria);
+    color: var(--color-cinza);
     font-weight: 300;
 }
 
@@ -489,7 +487,15 @@ body{
     .card-skills{
         width: 50%;
     }
+    .card-skills ul{
+        justify-content: flex-start;
+    }
     .card-skills ul li{
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-end;
         font-size: 0.7rem;
     }
     .card-skills ul li span{
