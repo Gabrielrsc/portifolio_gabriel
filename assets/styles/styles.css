@@ -349,6 +349,28 @@ body{
 .card-skills ul li img{
     width: 25px;
 }
+.certificados li{
+    width: 100%;
+}
+.certificados li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-bg);
+    font-size: 0.8rem;
+    
+}
+
+.certificados li a span{
+    display: inline;
+}
+
+.certificados ul li a:hover{
+    color: var(--color-segundaria);
+}
+
 
 
 .container-profissional_academico{
@@ -359,9 +381,13 @@ body{
     display: block;
 }
 .container-academico{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 125px;
+    padding: 20px;
     border: 2px solid var(--color-primaria);
     border-radius: 16px;
-    padding: 20px;
     margin-bottom: 1.5rem;
 }
 
@@ -497,6 +523,9 @@ body{
         align-items: center;
         justify-content:flex-end;
         font-size: 0.7rem;
+    }
+    .certificados li{
+        width:auto;
     }
     .card-skills ul li span{
         display: flex;
