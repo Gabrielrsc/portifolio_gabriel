@@ -62,8 +62,9 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 1rem 1rem;
+  justify-content: flex-start;
+  padding: 4rem 1rem;
+  gap: 1rem;
 }
 .menu-navegação .navegacao__container .perfil__menu {
   display: flex;
@@ -129,6 +130,7 @@ body {
     display: none;
   }
   .menu-navegação .navegacao__container {
+    justify-content: center;
     padding: 1rem 2rem;
   }
   .menu-navegação .navegacao__container .perfil__menu {
