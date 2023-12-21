@@ -1,0 +1,42 @@
+:root{
+    --color-primaria:#4db5ff; /*7B4AE2*/
+    --color-segundaria: #4db5ff; /*201A3F*/
+    --color-terciaria: #222831; /*171F26*/
+    --color-bg:#0F0F0F; /*0C151D*/
+    --color-cinza:#DDDDDD; /*A3ABB2*/
+    --color-branca:#FFFFFF; /*FFFFFF*/
+
+
+    --font-principal: 'Raleway', sans-serif;
+}
+
+body{
+    margin: auto;
+    max-width: 1728px;
+    background-color: var(--color-bg);
+    font-size: 16px;
+    font-family: var(--font-principal);
+    
+}
+.scroll{
+    overflow: hidden;
+}
+
+.container{
+    padding: 0 1.5rem;
+}
+.cabecalho{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1024px){
+    .cabecalho{
+        display: none;
+        
+    }
+    .container{
+        margin: 0 0 0 25vw;
+    }
+}

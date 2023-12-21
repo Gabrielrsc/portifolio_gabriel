@@ -1,0 +1,71 @@
+@use '../abstract/variaveis';
+
+.portifolio{
+    margin: 2rem auto;
+    .cards{
+        margin-top: 2rem;
+        .card{
+            background-color:var(--color-terciaria);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 1rem;
+            img{
+                width: 100%;
+
+            }
+            .titulo_links{
+                color: var(--color-branca);
+                font-size: 1.2rem;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 1rem 0;
+                .links img{
+                    width: 25px;
+                    height: 25px;
+                    a{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            p{
+                font-size: 0.8em;
+                color: var(--color-cinza);
+                text-align: justify;
+                margin-bottom: 1rem;
+            }
+            ul{
+                display:flex;
+                gap: 0.5rem;
+
+                li{
+                    width: 25px;
+                    text-align: center;
+                    align-items: center;
+        
+                    padding: 0.2em;
+                    border-radius: 8px;
+                    img{
+                        width: 20px;
+                       
+                    }
+                
+                }
+            }
+        }       
+    }
+}
+
+
+
+
+@media (min-width: 1024px){
+ 
+     .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+}

@@ -1,0 +1,221 @@
+@use './abstract/variaveis.scss';
+@use './components/menu-navegacao';
+@use './components/section-inicio';
+@use './components/portifolio';
+
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+.social_links{
+    color: var(--color-cinza);
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 1rem 0;
+}
+.social_links img{
+    width: 25px;
+
+}
+
+
+.section-titulo{
+    background-color: var(--color-terciaria);
+    color: var(--color-primaria);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.section-titulos{
+    padding: 10px;
+    display: flex;
+    justify-content:space-around;
+    font-size: 0.80rem;
+    font-weight: 500;
+    
+    
+}
+.section-titulos h3{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.section-titulos .active{    
+    background-color: var(--color-bg);
+    
+ 
+}
+
+.container-skills{
+    margin: 20px 0;
+}
+.card-skills{
+    display: flex;
+    flex-direction: column;
+    gap: .80rem;
+    margin-bottom: 1rem;
+}
+
+.card-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    gap: 0.7rem;
+}
+
+.card-skills ul li {
+    color: var(--color-bg);
+    font-weight: 800;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    background-color: var(--color-branca);
+
+}
+
+.card-skills ul li span{
+    display: none;
+}
+
+.card-skills ul li img{
+    width: 25px;
+}
+.certificados li{
+    width: 100%;
+}
+.certificados li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-bg);
+    font-size: 0.8rem;
+    
+}
+
+.certificados li a span{
+    display: inline;
+}
+
+.certificados ul li a:hover{
+    color: var(--color-segundaria);
+}
+
+
+
+.container-profissional_academico{
+    margin-top: 1.5rem;
+    display: none;
+}
+.active{
+    display: block;
+}
+.container-academico{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--color-terciaria);
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.container-academico h4{
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--color-primaria);
+    margin-bottom: 0.5rem;
+}
+
+.container-academico p{
+    line-height: 1.5rem;
+    color: var(--color-branca);
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+.tempo{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-primaria);
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.tempo p{
+    color: var(--color-primaria);
+    font-weight: 300;
+}
+
+
+.rodape{
+    color: var(--color-cinza);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 3.12rem 0;
+}
+
+@media (min-width: 1024px){
+    
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .container-skills{
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .card-skills ul{
+        justify-content: cen;
+    }
+    .card-skills ul li{
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-end;
+        font-size: 0.7rem;
+    }
+    .certificados li{
+        width:auto;
+    }
+    .card-skills ul li span{
+        display: flex;
+    }
+    .card-skills ul li img{
+        width: 25px;
+    }
+    .container_flex{
+        display: flex;
+        margin: auto;
+        flex-direction: row-reverse;
+        justify-content:space-evenly;
+
+    }
+
+    .container-profissional_academico{
+        display: block;
+
+        margin:2rem;
+        width:50%;
+    }
+
+
+
+    .section-titulo h3{
+        background-color: transparent;
+        margin: 0 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .section-titulo .active{
+        background-color: transparent;
+    }
+}
